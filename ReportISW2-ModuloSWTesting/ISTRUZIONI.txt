@@ -1,0 +1,32 @@
+Istruzioni per la corretta compilazione ed esecuzione dei tests:
+
+(1) Bookkeper: Per eseguire correttamente i test è necessario che siano in 
+               esecuzione un numero sufficiente di bookies. Prima di 
+               compilare il progetto, eseguire il comando seguente
+               dalla cartella root del progetto:
+               
+               bin/bookkeeper localbookie 4
+
+               Tale comando permette di instanziare un insieme di 4 bookies
+               in locale. Se viene richiesto di eseguire il comando
+               "mvn clean package -DskipTest" rispondere "y" ed attendere 
+               qualche istante.
+
+               Successivamente sarà possibile esguire i tests e generare il
+               report Jacoco tramite il comando:
+                
+               mvn clean verify
+
+               Infine, per poter generare il report Pitest:
+               
+               mvn org.pitest:pitest-maven:mutationCoverage
+
+
+(2) Syncope:  per compilare, eseguire correttamente i test e generare il 
+              report Jacoco è sufficiente utilizzare il comando:
+            
+              mvn clean verify
+
+              Per generare il report Pitest:
+            
+              mvn org.pitest:pitest-maven:mutationCoverage

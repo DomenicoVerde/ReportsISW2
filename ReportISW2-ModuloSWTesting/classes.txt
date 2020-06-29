@@ -1,0 +1,4 @@
+org.apache.bookkeeper.client.Bookkeeper
+org.apache.bookkeeper.streaming.LedgerInputStream
+org.apache.syncope.core.spring.policy.DefaultPasswordRule
+org.apache.syncope.core.spring.policy.DefaultAccountRule
